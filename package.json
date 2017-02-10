@@ -1,0 +1,19 @@
+{
+  "name": "estating",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-style": "stylus public/stylesheets/stylus/*.styl --out public/stylesheets/css",
+    "watch": "watch 'npm run build-style' ./public/stylesheets/stylus"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.16.0",
+    "client-sessions": "^0.7.0",
+    "express": "^4.14.1",
+    "mongoose": "^4.8.1"
+  }
+}
