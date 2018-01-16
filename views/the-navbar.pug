@@ -1,24 +1,19 @@
-.navbar.navbar-default.navbar-fixed-top.navbar-inverse(role='navigation')
-    .container
-        .navbar-header
-            button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
-                span.sr-only Toggle navigation
-                span.icon-bar
-                span.icon-bar
-                span.icon-bar
-            a.re-label.navbar-brand(href='/') The Realest Estate 
-        #login-or-profile.navbar-collapse.collapse(v-cloak)
-            //- ul.nav.navbar-nav.text-center
-            ul#logged-in.nav.navbar-nav.navbar-right(v-if="loggedIn")
-                li
-                    a.re-label(href='/curriculum') Curriculum
-                li
-                    a.re-label(href='/my-profile') My Profile
-                li
-                    a.re-label(href='/about') About
-            ul#not-logged-in.nav.navbar-nav.navbar-right(v-if="!loggedIn")
-                li
-                    a.re-label(href='/log-in') Log In
-		    
-.space
-.space
+nav(class="navbar navbar-expand-md2 navbar-light bg-light")
+    a(class="navbar-brand" href="#") Navbar
+    button(class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
+        span(class="navbar-toggler-icon")
+
+    div(class="collapse navbar-collapse" id="navbarSupportedContent")
+        ul(class="navbar-nav mr-auto")
+            li(class="nav-item active")
+                a(class="nav-link" href="#") Home
+            li(class="nav-item")
+                a(class="nav-link" href="#") Link
+
+            li(class="nav-item dropdown")
+                a(class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Dropdown
+
+            li(class="nav-item")
+                a(class="nav-link disabled" href="#") Disabled
+
+
